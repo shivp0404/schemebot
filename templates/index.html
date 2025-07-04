@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SchemeBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+     
+   
+</head>
+
+<body>
+  <div class="chat-container">
+    <h1> Government Scheme Finder Chatbot</h1>
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message">👋 Hi! I'm SchemeBot. Let's get started.<br>How old are you?</div>
+    </div>
+    <form id="chatForm">
+      <input type="text" id="userInput" placeholder="Type your answer..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+    <div id="optionButtons"></div>
+  </div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+ 
+</body>
+</html>
